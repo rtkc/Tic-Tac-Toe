@@ -29,11 +29,10 @@ def check_winner(board)
     if board[line[0]] == 'X' && board[line[1]] == 'X' && board[line[2]] == 'X'
       return "Player"
     elsif board[line[0]] == 'O' && board[line[1]] == 'O' && board[line[2]] == 'O'
-      return "Computer" 
-    else
-      return nil
+      return "Computer"
     end
   end
+  nil
 end
 
 def announce_winner(winner)
@@ -76,7 +75,3 @@ if winner
 else
   puts "It's a tie."
 end
-
-
-
-
